@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="referrer" content="no-referrer"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>
+            KYK Wifi Otomatik Giriş
+        </title>
+        <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <!--[if lt IE 9]>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <h1>
+                    Link Oluşturucu
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <form id="creator">
+                        <div class="form-group">
+                            <label for="username">Kullanıcı Adı:</label>
+                            <input type="text" class="form-control" id="username" placeholder="Kullanıcı Adı">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Parola:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Parola">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Oluştur</button>
+                    </form>
+                    <br>
+                    <div class="alert alert-danger" id="errors">
+                        <strong>Hata:</strong> Kullanıcı adı ve parola boş olmamalıdır!
+                    </div>
+                    <div class="form-group" id="results">
+                        <label for="output">Link:</label>
+                        <textarea class="form-control" id="output">
+                        </textarea>
+                        <br>
+                        <a href="#" id="output2" rel="noreferrer">Bu linki de kullanabilirsin</a>
+                    </div>
+                </div>
+                <div class="footer">Girilen bilgiler oluşturulan linkin içerisinde kullanılması dışında sayfa dışına çıkarılmamaktadır.<br>Bu sayfadan veya oluşturulan linkin kullanımından ötürü doğabilecek tüm sonuçların yasal sorumluluğu sayfayı kullanana aittir.</div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Base64/1.0.0/base64.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
